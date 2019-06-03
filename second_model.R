@@ -57,6 +57,18 @@ print(mod)
 ## save the model to disk
 saveRDS(mod, "./model_2.rds")
 
+## load the model
+model<- readRDS("./model_2.rds")
+
+## make a caterpillar plot of the model output
+mod.mcmc<- as.mcmc(model)
+caterplot(mod.mcmc, parms =c("b[1]","b[2]","b[3]","b[4]","b[5]","b[6]","b[7]","b[8]",
+                             "b[9]","b[10]","b[11]"),style = "plain",
+          labels=c("bintbel2","middleclass","no edu","male","m.agebel20","m.ageabv34","primary edu",
+                   "firstbirth","rich","urban","bintabv2"))
+abline(v=0)
+
+
 
 
 
