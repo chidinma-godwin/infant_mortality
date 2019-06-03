@@ -5,7 +5,8 @@ Infant mortality is an important index of the overall physical health of a count
 ## Data Source
 The Data used is from the fifth round Multiple Indicator Survey (MICS5, 2016-2017).
 ## Content
-- **model 1!** contains code for single level logistic regression model
-- **model 2!** contains code for three level logistic regression model
-- **inf_data!** contains the cleaned data used in this research
-- **requirements!** contains software used and their versions
+- **first_model** contains code for single level logistic regression model
+- **second_model** contains code for three level logistic regression model
+- **inf_data** contains the cleaned data used in this research
+- **requirements** contains software used and their versions
+- **model_1.rds** and **model_2.rds** contains the saved model 1 and model 2 objects
